@@ -6,8 +6,14 @@
     <title>dom and date</title>
   </head>
   <body>
-    <button class="my-button">click me</button>
+    <!-- <button class="my-button">click me</button> -->
+    <div class="my-div">this is a div</div>
 
-    <script></script>
+    <script>
+      let button = document.createElement("button");
+      button.innerText = "Click me";
+      document.querySelector(".my-div").appendChild(button);
+      document.querySelector(".my-div").removeChild(button);
+    </script>
   </body>
 </html>
